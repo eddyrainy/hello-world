@@ -1,0 +1,22 @@
+<%(TOC)%>
+# Developing iOS games overview
+> **Note**: This tutorial is currently available to only demonstrate early iOS support for the Unreal GDK. We do not yet recommend that you use it to develop iOS games. For information about the alpha version of mobile development support, follow our [development roadmap](https://github.com/spatialos/UnrealGDK/projects/1) and [Unreal features support](https://docs.improbable.io/unreal/alpha/unreal-features-support) pages.
+
+In this tutorial, you'll learn about the steps to develop game for iOS devices using the Unreal GDK:
+
+1. [Check you meet the prerequites](#1.-Check-you-meet-the-prerequites): Ensure that you meet all the prerequisites required.
+2. [Check out the iOS branch of Unreal GDK](#2.-Check-out-the-iOS-branch-of-Unreal-GDK): Check out the iOS branch of Unreal GDK, build the dependencies, and rebuild your project for iOS development.
+3. [Set up iOS development signing certificate](#3.-Set-up-iOS-development-signing-certificate): Get your Apple Developer certificates setup to work with your Unreal Engine 4 (UE4) project. 
+4. [Set up a remote build of Unreal Engine](#4.-Set-up-a-remote-build-of-Unreal-Engine): Remotely compile on a Mac from a Windows machine to create an iOS build.
+5. [Use local development workflow](#5.-Use-local-development-workflow): Set up the local connection for the iOS client, launch a local deployment, and connect the iOS client to the deployment.
+6. [Use cloud development workflow](#6.-Use-cloud-development-workflow): Connect a game client to the cloud deployment and connect an UnrealServer worker to the cloud deployment.
+
+> **Note**: The preceding development workflows are still in the early stage, and there will be constant improvements to them.
+
+After you complete the tutorial, you should be able to connect your game to your local or cloud deployment for testing.
+
+**Terms used on this page**
+
+- `<GameRoot>` - The directory that contains your project’s .uproject file and Source folder.
+- `<ProjectRoot>` - The directory that contains your `<GameRoot>` directory.
+- `<YourProject>` - The name of your project and .uproject file (for example, `\<GameRoot>\YourProject.uproject`).
